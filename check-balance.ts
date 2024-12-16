@@ -11,7 +11,7 @@ if (!publicKey || !PublicKey.isOnCurve(publicKey.toBuffer())) {
   console.error(`Invalid wallet address: ${publicKey.toBase58()}`);
 } else {
   const connection = new Connection(
-    "https://api.mainnet-beta.solana.com",
+    "https://api.devnet.solana.com",
     "confirmed"
   );
 
